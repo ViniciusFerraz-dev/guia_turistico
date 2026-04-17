@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+body {
+    background-color: #1B1717;
+    color: #EDEBDD;
+    width: 90%;
+    margin: 30px auto;
+}
+
+header, footer {
+    background-color: #630000;
+    border-radius: 30px;
+    border: 2px solid #EDEBDD;
+}
+
+header {
+    padding: 20px 20px 40px 20px;
+}
+
+.bannercenter {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto 50px auto;
+    border-radius: 5px;
+    border: 3px solid #1B1717;
+}
+
+.navegação {
+    text-align: center;
+    margin: 40px auto 10px auto;
+    width: 90%;
+}
+
+.navegação a {
+    color: #EDEBDD;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #630000;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #EDEBDD;
+    margin: 5px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #EDEBDD;
+    color: #630000;
+    border: 2px solid #630000;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #EDEBDD, transparent);
+    width: 80%;
+    margin: 30px auto;
+}
+
+.titulo1 {
+    text-align: center;
+    font-size: clamp(30px, 5vw, 70px);
+    margin: 20px auto 30px auto;
+}
+
+.textoboasvindas {
+    text-align: center;
+    font-size: clamp(14px, 2vw, 18px);
+    margin: 20px auto 25px auto;
+}
+
+.boasvindas {
+    text-align: center;
+    font-size: clamp(18px, 3vw, 30px);
+    margin: 20px auto;
+    border-radius: 13px;
+    border: 2px solid #EDEBDD;
+    padding: 20px;
+    background-color: #630000;
+    width: 80%;
+    color: #EDEBDD;
+}
+
+.imagemdeapresentação {
+    display: block;
+    max-width: 100%;
+    margin: 35px auto 50px auto;
+    border-radius: 15px;
+    border: 2px solid #EDEBDD;
+}
+
+.sobre {
+    font-size: clamp(14px, 2vw, 20px);
+    background-color: #630000;
+    color: #EDEBDD;
+    border-radius: 20px;
+    border: 2px solid #EDEBDD;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#resumocidades {
+    text-align: center;
+    font-size: clamp(18px, 3vw, 30px);
+    margin: 20px auto;
+    border-radius: 13px;
+    border: 2px solid #EDEBDD;
+    padding: 20px;
+    background-color: #630000;
+    width: 80%;
+    color: #EDEBDD;
+}
