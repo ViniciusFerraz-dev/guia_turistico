@@ -12,8 +12,10 @@ header, footer {
     border-radius: 30px;
     border: 2px solid #EDEBDD;
 }
-
 header {
+    padding: 20px 20px 40px 20px;
+}
+footer {
     padding: 20px 20px 40px 20px;
 }
 
@@ -25,13 +27,12 @@ header {
     border: 3px solid #1B1717;
 }
 
-.navegação {
+.headerfooter {
     text-align: center;
     margin: 40px auto 10px auto;
     width: 90%;
 }
-
-.navegação a {
+.headerfooter nav a {
     color: #EDEBDD;
     text-decoration: none;
     font-size: 15px;
@@ -42,12 +43,14 @@ header {
     border: 2px solid #EDEBDD;
     margin: 5px;
     display: inline-block;
+    transition: transform 0.3s margin 0.3s;
 }
-
-nav a:hover {
+.headerfooter nav a:hover {
     background-color: #EDEBDD;
     color: #630000;
     border: 2px solid #630000;
+    transform: scale(1.2);
+    margin: 0 11px;
 }
 
 hr {
@@ -56,6 +59,14 @@ hr {
     background: linear-gradient(to right, transparent, #EDEBDD, transparent);
     width: 80%;
     margin: 30px auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+}
+
+p, a, nav {
+    font-family: 'Lato', sans-serif;
 }
 
 .titulo1 {
@@ -84,7 +95,8 @@ hr {
 
 .imagemdeapresentação {
     display: block;
-    max-width: 100%;
+    max-width: 95%;
+    max-height: 500%;
     margin: 35px auto 50px auto;
     border-radius: 15px;
     border: 2px solid #EDEBDD;
@@ -100,7 +112,7 @@ hr {
     margin-top: 30px;
 }
 
-#resumocidades {
+.titulocards {
     text-align: center;
     font-size: clamp(18px, 3vw, 30px);
     margin: 20px auto;
@@ -111,3 +123,333 @@ hr {
     width: 80%;
     color: #EDEBDD;
 }
+
+.cardflex {
+    display: flex;
+    gap: 30px;
+    margin: 5vh auto;
+    width: 90% ;
+    flex-wrap: wrap;
+}
+.cardflex h3 {
+    font-size: 50px;
+    margin: 30px 0px;
+}
+
+.cardflex > div {
+    transition: transform 0.5s;
+}
+.cardflex > div:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cardcities {
+    background-color: #630000;
+    border: 2px solid #EDEBDD;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+}
+
+.cardpoints {
+    color: #1B1717;
+    background-color: #EDEBDD;
+    border: 2px solid #630000;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+}
+
+.centerfooter {
+    text-align: center;
+    font-size: 14px;
+    margin: 20px auto 20px auto;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.cidade-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #630000;
+    border: 2px solid #EDEBDD;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: #EDEBDD;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.cidade-card:hover {
+    transform: translateX(30px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cidade-card img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.cidade-card h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+}
+
+.headerfootercidades {
+    text-align: center;
+    margin: 40px auto 10px auto;
+    width: 90%;
+}
+.headerfootercidades nav a {
+    color: #EDEBDD;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #630000;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #EDEBDD;
+    margin: 5px;
+    display: inline-block;
+    transition: transform 0.5s margin 0.5s;
+}
+.headerfootercidades nav a:hover {
+    background-color: #EDEBDD;
+    color: #630000;
+    border: 2px solid #630000;
+    transform: scale(1.1);
+    margin: 5px 11px;
+}
+
+.apresentação-cidades-pontos {
+    text-align: center;
+    font-size: clamp(14px, 2vw, 20px);
+    background-color: #EDEBDD;
+    color: #1B1717;
+    border-radius: 20px;
+    border: 2px solid #630000;
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.apresentação-cidades-pontos h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.conteudo-cidades-pontos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.apresentação-cidades-pontos img {
+    width: 32%;
+    border-radius: 10px;;
+    border: 2px solid #630000;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+.conteudo-cidades-pontos img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.conteudo-cidades-pontos p {
+    max-width: 550px;
+    max-height: 500px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    text-align: justify;
+    padding-right: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    padding: 10px;
+    border-radius: 6px;
+        border: 2px solid #630000;
+}
+.conteudo-cidades-pontos p:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.conteudo-cidades-pontos p::-webkit-scrollbar {
+    width: 6px;
+}
+
+.conteudo-cidades-pontos p::-webkit-scrollbar-track {
+    background: #EDEBDD;
+}
+
+.conteudo-cidades-pontos p::-webkit-scrollbar-thumb {
+    background-color: #630000;
+    border-radius: 10px;
+}
+
+
+/* CONTEUDO INVERTIDO */
+.conteudo-cidades-pontos.invertido {
+    flex-direction: row-reverse;
+}
+
+.apresentação-pontos-turisticos {
+    text-align: center;
+    justify-content: space-around;
+    font-size: clamp(14px, 2vw, 20px);
+    background-color: #630000;
+    color: #EDEBDD;
+    border-radius: 20px;
+    border: 2px solid #EDEBDD;
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.conteudo-cidades-pontos.invertido {
+    margin: 0 auto;
+}
+
+.conteudo-cidades-pontos.invertido img {
+    width: 25%;
+    border-radius: 10px;
+    border: 2px solid #EDEBDD;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.conteudo-cidades-pontos.invertido p {
+    max-width: 550px;
+    max-height: 500px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    text-align: justify;
+    padding-right: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    padding: 10px;
+    border-radius: 6px;
+        border: 2px solid #EDEBDD;
+}
+.conteudo-cidades-pontos.invertido p::-webkit-scrollbar {
+    width: 6px;
+}
+
+.conteudo-cidades-pontos.invertido p::-webkit-scrollbar-track {
+    background: #630000;
+}
+
+.conteudo-cidades-pontos.invertido p::-webkit-scrollbar-thumb {
+    background-color: #EDEBDD;
+    border-radius: 10px;
+}
+
+
+/* PÁGINA DAS TRADIÇÕES */
+
+.grid-tradicoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 40px 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-tradicao {
+    background-color: #630000;
+    border: 2px solid #EDEBDD;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-tradicao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-tradicao img {
+    width: clamp(80px, 100%, 150px);
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/*.card-tradicao:last-child {
+    grid-column: 1 / -1;
+    width: 50%;
+    margin: 0 auto;
+}*/
+
+.scroll-box {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 2px solid #EDEBDD;
+    border-radius: 6px;
+    text-align: left;
+    flex: 1;
+    min-width: 0;
+}
+
+.scroll-box h3 {
+    text-align: center;
+}
+
+.scroll-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+    background: #630000;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+    background-color: #EDEBDD;
+    border-radius: 10px;
+}
+
+/* telas menores — vira 1 coluna */
+@media (max-width: 600px) {
+    .grid-tradicoes {
+        grid-template-columns: 1fr;
+    }
+
+    .card-tradicao:last-child {
+        width: 100%;
+    }
+
+    .card-tradicao {
+        flex-direction: column;
+    }
+
+    .card-tradicao img {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+
+/* PÁGINA DA GASTRONOMIA */
+
